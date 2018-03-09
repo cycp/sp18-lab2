@@ -47,12 +47,14 @@ Let's create the association between pokemon(s) and trainers!
 
 Create the migration that will add the foreign key, `trainer_id` column to the `pokemons` table. 
 
+Then, declare the `belongs_to` and `has_many` association in the `pokemon.rb` and `trainer.rb` model classes. 
+
 Run `rails db:migrate` and play around in the `rails console` to create some trainers and their pokemon!
 
 ## Model-View-Controller
 
 **Step 1**
-Create a trainers controller that contains an `index` method that will allow you to fetch all trainers from your database. 
+Create a trainers controller that contains an `index` method that will allow you to fetch all trainers from your database. (Don't overwrite the provided `views/trainers/index.html/erb` - if you're confused by this note, ignore it.)
 
 *Hint:* This method should contain one line.
 
@@ -69,4 +71,3 @@ Often times, it isn't very efficient to run rails console in order to create dat
 Another way we can quickly populate our database with default values is through a **seed file**, located in `db/seeds.rb`. Take a look at the file to see what it does.
 
 Finally, to seed your database, run `rails db:seed` and refresh the page to see the new data.
-

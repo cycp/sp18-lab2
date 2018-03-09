@@ -18,6 +18,7 @@ cd lab2
 ```
 ## Models
 **Step 1** 
+
 Let's begin by creating two models with the following attributes:
 ### Trainer
 ```
@@ -33,11 +34,12 @@ attack: an integer representing the attack points of the pokemon
 Finally, run `rails db:migrate` to create your tables.
 
 **Step 2**
+
 Oh wait! I forgot that pokemon should also have a `health` column :( Luckily, we have migrations that can help us.
 
 Generate a migration that adds a integer column to the `pokemons` table that represents the health points of a pokemon.
 
-*Hint:* Is there a single command you can run in your terminal to generate this for you?
+*Challenge:* Is there a single command you can run in your terminal to generate this for you?
 
 ## Associations
 
